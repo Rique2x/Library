@@ -137,6 +137,21 @@ header{
   }
 
   main{
+    
+    display: inline-grid;
+    margin: 40px;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  main > .article1{
+    color: var(--textColor);
     border: 1px solid;
-    display: grid;
+    grid-column: 1 / 3;
+
+  } 
+
+  main > .article2{
+    color: var(--textColor);
+    border: 1px solid;
   }
