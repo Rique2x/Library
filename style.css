@@ -5,6 +5,8 @@ body{
 
 header{
     border: 1px solid ;
+    display: flex;
+    justify-content: space-around;
 }
 
 .title{
@@ -25,4 +27,9 @@ header{
     text-align: center;
     font-size: 3em;
     font-family: 'Merriweather Sans', sans-serif;
+}
+
+.switch-container{
+    border: 1px solid;
+    position: relative;
 }
