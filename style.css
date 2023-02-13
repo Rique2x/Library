@@ -226,3 +226,9 @@ header{
 	text-decoration: underline;
 	font-size: larger;
 }
+
+.close {
+	color: #aaaaaa;
+	float: right;
+	font-size: 28px;
+}
