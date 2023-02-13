@@ -190,12 +190,12 @@ header{
     color: var(--textColor)
 }
 
-#completed{
+#readBooksResult{
     color:var(--progress-green)
 }
-#progress{
+#unreadBooksResult{
     color: var(--progress-orange)
 }
-#onMyList{
+#pagesReadResult{
     color: gray;
 }
