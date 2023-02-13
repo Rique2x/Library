@@ -162,5 +162,12 @@ header{
     color: var(--textColor);
     border: 1px solid;
     font-size: 1.2em;
-    padding-left: 20px;
+    text-align: center;
+  } 
+
+  .article2 > div{
+    font-weight: bold;
+    font-style: italic;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
