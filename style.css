@@ -241,9 +241,27 @@ header{
 }
 
 .modalEntryDiv > form{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 	margin: 1rem;
+}
+
+.hasRead{
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+	gap: 0.5em;
+	margin: 1em;
+}
+
+.hasRead > input {
+	align-self: flex-end;
+}
+
+.modalEntryDiv > form > input {
+	width: 12vh;
+	margin: 0.5em;
 }
