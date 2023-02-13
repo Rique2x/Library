@@ -200,6 +200,21 @@ header{
     color: gray;
 }
 
+.addBook{
+  border: 1px solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#addBook{
+  font-size: 3em;
+  border: 1px solid;
+  border-radius: 3em;
+  height: 60px;
+  width: 60px;
+}
+
 .modal{
   border: 1px solid;
   display: block;
@@ -280,5 +295,5 @@ section{
   justify-content: space-around;
 	grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
 	grid-template-rows: repeat(auto-fill, minmax(10rem, 2rem));
-	row-gap: 5rem;
+	gap: 1rem;
 }
