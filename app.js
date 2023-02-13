@@ -15,10 +15,10 @@ function toggleTheme() {
 
 (function () {
     if (localStorage.getItem('theme') === 'theme-dark') {
-        setTheme('theme-dark');
+        setTheme('theme-light');
         document.getElementById('slider').checked = false;
     } else {
-        setTheme('theme-light');
+        setTheme('theme-dark');
       document.getElementById('slider').checked = true;
     }
 })();

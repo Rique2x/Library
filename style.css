@@ -43,9 +43,9 @@ header{
     gap: 10px;
 }
 
-.title > img{
-    height: 100px;
-    border-radius: 50px;
+.title > i{
+    font-size: 5em;
+    color: var(--textColor);
 }
 
 .title > h2{
@@ -176,8 +176,7 @@ header{
 .log-cell{
     display: flex;
     align-items: center;
-    
-  
+    height: 20px;
     padding: 10px;
 }
 
@@ -186,4 +185,14 @@ header{
     font-weight: 900;
     padding-left: 5px;
     color: var(--textColor)
+}
+
+#completed{
+    color:var(--progress-green)
+}
+#progress{
+    color: var(--progress-orange)
+}
+#onMyList{
+    color: gray;
 }
