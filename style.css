@@ -176,8 +176,8 @@ header{
 .log-cell{
     display: flex;
     align-items: center;
-    width: 150px;
-    height: 20px;
+    
+  
     padding: 10px;
 }
 
