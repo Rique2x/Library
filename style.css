@@ -210,3 +210,12 @@ header{
   transform: translate(-50%, -50%);
 	overflow: auto;
 }
+
+.modal-content{
+  background-color: #a37777;
+  padding-left: 1.1em;
+  padding-right: 1.1em;
+  border: 1px solid #13212c;
+  width: auto;
+  height: auto;
+}
