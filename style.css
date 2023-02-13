@@ -219,3 +219,10 @@ header{
   width: auto;
   height: auto;
 }
+
+.modalTopText {
+	font-weight: bold;
+	margin-bottom: 1rem;
+	text-decoration: underline;
+	font-size: larger;
+}
