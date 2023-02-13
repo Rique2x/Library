@@ -212,7 +212,7 @@ header{
 }
 
 .modal-content{
-  background-color: #a37777;
+  background-color: #137feb;
   padding-left: 1.1em;
   padding-right: 1.1em;
   border: 1px solid #13212c;
@@ -238,4 +238,12 @@ header{
 	color: rgb(255, 255, 255);
 	text-decoration: none;
 	cursor: pointer;
+}
+
+.modalEntryDiv > form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+	margin: 1rem;
 }
