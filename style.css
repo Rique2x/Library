@@ -232,3 +232,10 @@ header{
 	float: right;
 	font-size: 28px;
 }
+
+.close:hover,
+.close:focus {
+	color: rgb(255, 255, 255);
+	text-decoration: none;
+	cursor: pointer;
+}
