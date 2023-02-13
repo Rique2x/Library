@@ -152,6 +152,12 @@ header{
     font-size: 1.2em;
   } 
 
+  .article1 > p span{
+    color: #000000;
+    font-family: monospace;
+    background-color: #c9c6c6;
+  }
+
   main > .article2{
     color: var(--textColor);
     border: 1px solid;
