@@ -14,8 +14,8 @@
     --progress-orange: rgb(243, 161, 9);
     --background: #15202b;
     --card-primary: #15202b;
-    --textColor: #dadad8;
-    --borderColor: #aaaaaa;
+    --textColor: #dad6d6;
+    --borderColor: hsl(0, 5%, 74%);
     --shadowColor: var(--background);
     --shadowColor2: #ebe36b;
     --progressBarBackground: var(--background);
@@ -34,7 +34,9 @@ body{
 header{
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
+
 
 .title{
     display: flex;
@@ -57,14 +59,15 @@ header{
 
 
 .switch-container {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    position: relative;
+    bottom: 50px;
+    left: 0px;
+
   }
   .switch-container h1 {
     font-family: 'Merriweather Sans', sans-serif;
     color: var(--textColor);
-    font-size: 1em;
+    font-size: 0.8em;
     text-align: center;
     margin-bottom: 0.5em;
   }
@@ -80,8 +83,8 @@ header{
   .switch {
     position: relative;
     display: inline-block;
-    width: 60px;
-    height: 24px;
+    width: 46px;
+    height: 14px;
   }
   
   /* Hide default HTML checkbox */
@@ -106,8 +109,8 @@ header{
   .slider:before {
     position: absolute;
     content: "";
-    height: 34px;
-    width: 34px;
+    height: 20px;
+    width: 20px;
     left: 0px;
     bottom: 4px;
     top: 0;
