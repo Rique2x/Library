@@ -11,11 +11,13 @@
 }
 .theme-dark {
     --progress-green: #13bb0a;
+    --plus-darkBlue: #0d131a;;
     --progress-orange: rgb(243, 161, 9);
     --background: #15202b;
     --card-primary: #15202b;
     --textColor: #dad6d6;
     --borderColor: hsl(0, 5%, 74%);
+    --plusSign: var(--plus-darkBlue);
     --shadowColor: var(--background);
     --shadowColor2: #ebe36b;
     --progressBarBackground: var(--background);
@@ -201,7 +203,8 @@ header{
 }
 
 .addBook{
-  border: 1px solid;
+  border: 1px solid #0c131a;
+  border-radius: 5px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -214,7 +217,10 @@ header{
   width: 60px;
   background-color: var(--background);
   cursor: pointer;
+  color: var(--plus-darkBlue);;
 }
+
+
 
 .modal{
   border: 1px solid;
@@ -290,7 +296,7 @@ header{
 }
 
 section{
-  border: 1px solid;
+  padding: 10px;
   display: grid;
   background-color: var(--background);
   justify-content: space-around;
