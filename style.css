@@ -169,9 +169,21 @@ header{
     grid-template-rows: repeat(2, 1fr);
 }
 
+.log-title{
+    text-align: center;
+}
+
 .log-cell{
     display: flex;
-    width: 130px;
+    align-items: center;
+    width: 150px;
     height: 20px;
     padding: 10px;
+}
+
+.log-cell-stat{
+    font-size: 1.17em;
+    font-weight: 900;
+    padding-left: 5px;
+    color: var(--textColor)
 }
