@@ -270,5 +270,15 @@ header{
   border: 1px solid;
   font-family: monospace;
   padding: 7px;
-  
+
+}
+
+section{
+  border: 1px solid;
+  display: grid;
+  background-color: var(--background);
+  justify-content: space-around;
+	grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+	grid-template-rows: repeat(auto-fill, minmax(10rem, 2rem));
+	row-gap: 5rem;
 }
