@@ -209,10 +209,11 @@ header{
 
 #addBook{
   font-size: 3em;
-  border: 1px solid;
-  border-radius: 3em;
+  border: 1px solid var(--background);
   height: 60px;
   width: 60px;
+  background-color: var(--background);
+  cursor: pointer;
 }
 
 .modal{
