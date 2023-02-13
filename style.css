@@ -157,17 +157,14 @@ header{
     background-color: #c9c6c6;
   }
 
-  main > .article2{
-    color: var(--textColor);
-    border-radius: 5px;
+  .log-container{
     border: 1px solid;
-    font-size: 1.2em;
-    text-align: center;
-  } 
+    border-radius: 5px;
+    color: var(--textColor);
+  }
 
-  .article2 > div{
-    font-weight: bold;
-    font-style: italic;
+#log-grid{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-  }
+    grid-template-rows: repeat(2, 1fr);
+}
