@@ -265,3 +265,10 @@ header{
 	width: 12vh;
 	margin: 0.5em;
 }
+
+.addBookToArray{
+  border: 1px solid;
+  font-family: monospace;
+  padding: 7px;
+  
+}
