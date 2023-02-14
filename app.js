@@ -53,7 +53,7 @@ class Book {
 const defaultBooks = [
 	new Book("The Hobbit", "J.R.R. Tolkien", 295, true),
 	new Book("A Game of Thrones", "George R.R. Martin", 694, true),
-	new Book("Mistborn: The Final Empire", "Brandon Sanderson", 541, true),
+	new Book("Mastery", "Robert Greene", 353, true),
 	new Book("The 48 Laws of Power", "Robert Greene", 480, false),
 	new Book("The Name of the Wind", "Patrick Rothfuss", 662, false),
 ];
