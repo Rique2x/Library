@@ -73,6 +73,7 @@ header{
     text-align: center;
     margin-bottom: 0.5em;
   }
+
   .switch-container button {
     color: var(--font-color);
     background: var(--color-primary);
@@ -336,4 +337,36 @@ header{
 	border: 1px solid;
 	line-height: 7px; /* within paragraph */
 	margin-bottom: 30px; /* between paragraphs */
+}
+
+/*Tablet Version 780px*/
+
+@media (max-width: 768px){
+
+  .title1 > h2{
+    font-size: 2.5em;
+  }
+
+  .title1 > i{
+    font-size: 4em;
+}
+
+.switch-container {
+  position: relative;
+  bottom: 40px;
+  left: 0px;
+
+}
+
+.main-container{
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.library{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
 }
