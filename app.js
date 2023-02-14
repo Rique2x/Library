@@ -32,7 +32,7 @@ const bookPagesInput = document.querySelector("#pages");
 const bookHasReadInput = document.querySelector("#read");
 const addBookToArray = document.querySelector(".addBookToArray");
 const onPageLibrary = document.querySelector(".library");
-const mainContainer = document.querySelector(".log-container");
+const section = document.querySelector("section");
 const readBooksResult = document.querySelector(".readBooksResult");
 const unreadBooksResult = document.querySelector(".unreadBooksResult");
 const pagesCounter = document.querySelector(".pagesReadResult");
@@ -238,14 +238,14 @@ function resetModalValues() {
 
 function openBookModal() {
 	modal.style.display = "block";
-	mainContainer.className += " modalIsOpen";
+	section.className += " modalIsOpen";
 	document.querySelector("#title").focus();
 }
 
 function closeBookModal() {
 	resetModalValues();
 	modal.style.display = "none";
-	mainContainer.className = "log-container";
+	section.className = " section";
 }
 
 function updateCounters() {

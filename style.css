@@ -249,6 +249,10 @@ header{
 	overflow: auto;
 }
 
+.modalIsOpen {
+	filter: blur(1px) brightness(0.8);
+}
+
 .modal-content{
   background-color: #ec954e;
   padding-left: 1.1em;
@@ -318,7 +322,7 @@ header{
 	justify-content: space-around;
 	grid-template-columns: repeat(4, 1fr);
   gap: 20px;
-	
+	flex-wrap: wrap;
 }
 
 
