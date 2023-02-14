@@ -40,19 +40,19 @@ header{
 }
 
 
-.title{
+.title1{
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
 }
 
-.title > i{
+.title1 > i{
     font-size: 5em;
     color: var(--textColor);
 }
 
-.title > h2{
+.title1 > h2{
     color: var(--textColor);
     text-align: center;
     font-size: 3em;
@@ -140,14 +140,22 @@ header{
     background-color: var(--borderColor);
   }
 
-  main{
-    display: inline-grid;
+  .main-container{
+    display: grid;
     margin: 40px;
     gap: 20px;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);  
+    grid-template-areas:
+      "header header header"
+      "sidebar library bookshelf"
+      "sidebar library bookshelf"
+      "sidebar library bookshelf"
+      "sidebar library bookshelf"
+      "footer footer footer";
+    
   }
 
-  main > .article1{
+  .main-container > .article1{
     color: var(--textColor);
     border-radius: 5px;
     border: 1px solid;
@@ -203,11 +211,11 @@ header{
 }
 
 .addBook{
-  border: 1px solid #0c131a;
   border-radius: 5px;
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 160px;
 }
 
 #addBook{
@@ -218,15 +226,23 @@ header{
   background-color: var(--background);
   cursor: pointer;
   color: var(--plus-darkBlue);;
+  transform: scale(1);
+	transition: 100ms;
 }
 
+#addBook:hover {
+	transform: scale(1.25);
+	transition: 300ms;
+	
+}
 
 
 .modal{
   border: 1px solid;
-  display: block;
+  display: none;
   z-index: 3;
   position: absolute;
+  position: fixed;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
@@ -242,7 +258,7 @@ header{
   height: auto;
 }
 
-.modalTopText {
+.modalToText {
 	font-weight: bold;
 	margin-bottom: 1rem;
 	text-decoration: underline;
@@ -295,12 +311,28 @@ header{
 
 }
 
-section{
+.library{
   padding: 10px;
-  display: grid;
   background-color: var(--background);
-  justify-content: space-around;
-	grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
-	grid-template-rows: repeat(auto-fill, minmax(10rem, 2rem));
-	gap: 1rem;
+  display: grid;
+	justify-content: space-around;
+	grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+	
+}
+
+
+
+.bookCard {
+  height: 200px;
+  color: #ddd;
+	border-radius: 5px;
+	display: flex;
+	flex-direction: column;
+	background-color: #202020;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid;
+	line-height: 7px; /* within paragraph */
+	margin-bottom: 30px; /* between paragraphs */
 }

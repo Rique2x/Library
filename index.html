@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
     <script src="https://kit.fontawesome.com/9ca286af2e.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&display=swap" rel="stylesheet">
     <title>Library</title>
@@ -16,7 +17,7 @@
 
     <header>
 
-     <div class="title">
+     <div class="title1">
         <i class="fa-solid fa-book-open"></i>
         <h2>My Library</h2>
     </div>
@@ -32,7 +33,7 @@
     
     </header>
 
-    <main>
+    <div class="main-container">
         <div class="article1">
             <p>This is a simple library app where you can add and delete books, change book status, see basic information and library statistics.</p>            
             <p><i class="fa-solid fa-triangle-exclamation" style="gap: 10px;"></i>This app is a demo, all data is stored in <span>localStorage</span>.</p>
@@ -43,34 +44,39 @@
             
             <div class="log-title"><h3>Book Log</h3></div>
             <div id="log-grid">
+                
                 <div class="log-cell">
-                  <h3 class="log-cell-title">Books Read:</h3>
-                  <span id="readBooksResult" class="log-cell-stat">2</span>
+                  <h3>Books Read:</h3>
+                  <span class="readBooksResult"></span>
                 </div>
                 <div class="log-cell">
-                  <h3 class="log-cell-title">Unread Books:</h3>
-                  <span id="unreadBooksResult" class="log-cell-stat">2</span>
+                  <h3>Unread Books:</h3>
+                  <span class="unreadBooksResult"></span>
                 </div>
                 <div class="log-cell">
-                  <h3 class="log-cell-title">Pages Read:</h3>
-                  <span id="pagesReadResult" class="log-cell-stat">2</span>
+                  <h3>Pages Read:</h3>
+                  <span class="pagesReadResult"></span>
                 </div>
               </div>
         </div> 
-    </main>
+    </div>
+    
 
-    <section>
+
+        <div class="library"></div>
       <div class="addBook">
         <button id="addBook"><i class="fa-solid fa-plus"></i></button>
       </div>
-    </section>
+
+    
+    
 
     <div id="myModal" class="modal">
             <div class="modal-content">
                 <span class="close">&times;</span>
                 <div class="modalEntryDiv">
                     <form action="" id="form">
-                        <h3 class="modalTopText">Add a Book</h3>
+                        <h3 class="modalToText">Add a Book</h3>
                         <label for="title">Title</label>
                         <input 
                         type="text"
