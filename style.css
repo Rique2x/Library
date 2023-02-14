@@ -176,19 +176,16 @@ header{
     color: var(--textColor);
   }
 
-#log-grid{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-}
-
-.log-title{
+.log-title > h3{
     text-align: center;
+    color: var(--textColor);
+    text-decoration: underline;
 }
 
 .log-cell{
     display: flex;
     align-items: center;
+    justify-content: center;
     height: 20px;
     padding: 10px;
 }
